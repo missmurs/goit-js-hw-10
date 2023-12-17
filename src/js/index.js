@@ -26,9 +26,7 @@ fetchBreeds()
       .join('');
 
     select.insertAdjacentHTML('beforeend', cats);
-    new SlimSelect({
-      select: select,
-    });
+    new SlimSelect({});
   })
   .catch(error => {
     Notiflix.Notify.failure(
